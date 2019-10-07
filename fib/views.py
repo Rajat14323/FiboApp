@@ -20,13 +20,12 @@ def add(request):
 	return render(request,'result.html',{"result":res,"time":(time.time()-time_start)})
 
 def Fibo(n): 
-    if n<0: 
-        pass
-    # First Fibonacci number is 0 
-    elif n==1: 
+    if n==1: 
         return 1
-    # Second Fibonacci number is 1 
+  
+   
     elif n==2: 
         return 1
+    
     else: 
         return Fibo(n-1)+Fibo(n-2) 
